@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desktop Style Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #4CAF50, #f9f9f9);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .desktop {
+            display: flex;
+            gap: 60px;
+        }
+        .icon {
+            text-align: center;
+            cursor: pointer;
+        }
+        .icon img {
+            width: 64px;
+            height: 64px;
+        }
+        .label {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="icon" onclick="window.open('https://www.ebay.co.uk', '_blank')" id="icon1">
+            <img src="https://cdn-icons-png.flaticon.com/256/5977/5977581.png" alt="eBay">
+            <div class="label">1</div>
+        </div>
+        <div class="icon" onclick="window.open('https://www.youtube.com', '_blank')" id="icon2">
+            <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="YouTube">
+            <div class="label">2</div>
+        </div>
+<div class="icon" onclick="window.open('https://chatgpt.com/', '_blank')" id="icon3">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-logo-icon-download-in-svg-png-gif-file-formats--chat-gpt-ai-tool-artificial-intelligence-productivity-apps-pack-logos-icons-8630392.png" alt="YouTube">
+            <div class="label">3</div>
+        </div>
+         <div class="icon" onclick="window.open('https://ukepc.com/', '_blank')" id="icon4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Windows_Calculator_icon.png" alt="YouTube">
+            <div class="label">4</div>
+        </div>
+ <div class="icon" onclick="window.open('https://www.aliexpress.com', '_blank')" id="icon5">
+            <img src="https://cdn.brandfetch.io/aliexpress.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="YouTube">
+            <div class="label">5</div>
+        </div>
+ <div class="icon" onclick="window.open('https://chat.deepseek.com/', '_blank')" id="icon6">
+            <img src="https://cdn-1.webcatalog.io/catalog/deepseek/deepseek-icon-filled-256.png?v=1751243690989" alt="YouTube">
+            <div class="label">6</div>
+        </div>
+ <div class="icon" onclick="window.open('https://www.youtube.com', '_blank')" id="icon7">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+            <div class="label">7</div>
+        </div>
+ <div class="icon" onclick="window.open('https://www.youtube.com', '_blank')" id="icon8">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+            <div class="label">8</div>
+        </div>
+ <div class="icon" onclick="window.open('https://m365.cloud.microsoft/chat/?auth=2', '_blank')" id="icon9">
+            <img src="https://www.datalinknetworks.net/hubfs/Products/ic_fluent_copilot_64_128@2x.png" alt="YouTube">
+            <div class="label">9</div>
+            </div>
+ <div class="icon" onclick="window.open('https://www.google.com', '_blank')" id="icon0">
+            <img src="https://cdn-icons-png.flaticon.com/256/2702/2702602.png" alt="YouTube">
+            <div class="label">0</div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '1') {
+                document.getElementById('icon1').click();
+            } else if (event.key === '2') {
+                document.getElementById('icon2').click();
+            }
+else if (event.key === '3') {
+                document.getElementById('icon3').click();
+            }
+else if (event.key === '4') {
+                document.getElementById('icon4').click();
+            }
+else if (event.key === '5') {
+                document.getElementById('icon5').click();
+            }
+else if (event.key === '6') {
+                document.getElementById('icon6').click();
+            }
+else if (event.key === '7') {
+                document.getElementById('icon7').click();
+            }
+else if (event.key === '8') {
+                document.getElementById('icon8').click();
+            }
+else if (event.key === '9') {
+                document.getElementById('icon9').click();
+            }
+else if (event.key === '0') {
+                document.getElementById('icon0').click();
+            }
+        });
+    </script>
+</body>
+</html>
