@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desktop Style Webpage</title>
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom, #4CAF50, #f9f9f9);
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop {
+        display: flex;
+        flex-direction: column; /* Stack rows vertically */
+        align-items: center; /* Center rows horizontally */
+        gap: 40px; /* Space between number row and letter row */
+    }
+    .desktop-row {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping for A–Z */
+        justify-content: center; /* Center wrapped items */
+        gap: 60px;
+        max-width: 90vw; /* Prevent too wide rows */
+    }
+    .icon {
+        text-align: center;
+        cursor: pointer;
+    }
+    .icon img {
+        width: 64px;
+        height: 64px;
+    }
+    .label {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+
+
+</head>
+<body>
+<div class="desktop">
+    <!-- First row: 1 to 0 -->
+    <div class="desktop-row"  id="number-row">
+        <div class="icon" onclick="window.open('https://www.ebay.co.uk', '_blank')" id="icon1">
+            <img src="https://cdn-icons-png.flaticon.com/256/5977/5977581.png" alt="eBay">
+            <div class="label">1</div>
+        </div>
+        <div class="icon" onclick="window.open('https://www.youtube.com', '_blank')" id="icon2">
+            <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="YouTube">
+            <div class="label">2</div>
+        </div>
+        <div class="icon" onclick="window.open('https://chatgpt.com/', '_blank')" id="icon3">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-logo-icon-download-in-svg-png-gif-file-formats--chat-gpt-ai-tool-artificial-intelligence-productivity-apps-pack-logos-icons-8630392.png" alt="ChatGPT">
+            <div class="label">3</div>
+        </div>
+        <div class="icon" onclick="window.open('https://ukepc.com/', '_blank')" id="icon4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Windows_Calculator_icon.png" alt="Calculator">
+            <div class="label">4</div>
+        </div>
+        <div class="icon" onclick="window.open('https://www.aliexpress.com', '_blank')" id="icon5">
+            <img src="https://cdn.brandfetch.io/aliexpress.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="AliExpress">
+            <div class="label">5</div>
+        </div>
+        <div class="icon" onclick="window.open('https://chat.deepseek.com/', '_blank')" id="icon6">
+            <img src="https://cdn-1.webcatalog.io/catalog/deepseek/deepseek-icon-filled-256.png?v=1751243690989" alt="DeepSeek">
+            <div class="label">6</div>
+        </div>
+        <div class="icon" onclick="window.open('https://www.pixelcut.ai/t/blur-background', '_blank')" id="icon7">
+            <img src="https://s.cafebazaar.ir/images/icons/com.appcenter.photo.editor-2225d01e-9f36-4cd0-a2a5-25525596180a_512x512.png" alt="PixelCut">
+            <div class="label">7</div>
+        </div>
+        <div class="icon" onclick="window.open('https://pinterestdownloader.com/', '_blank')" id="icon8">
+            <img src="https://dashboard.snapcraft.io/site_media/appmedia/2022/08/icon_1069PWo.png" alt="Pinterest Downloader">
+            <div class="label">8</div>
+        </div>
+        <div class="icon" onclick="window.open('https://m365.cloud.microsoft/chat/?auth=2', '_blank')" id="icon9">
+            <img src="https://www.datalinknetworks.net/hubfs/Products/ic_fluent_copilot_64_128@2x.png" alt="Copilot">
+            <div class="label">9</div>
+        </div>
+        <div class="icon" onclick="window.open('https://www.google.com', '_blank')" id="icon0">
+            <img src="https://cdn-icons-png.flaticon.com/256/2702/2702602.png" alt="Google">
+            <div class="label">0</div>
+        </div>
+    </div>
+
+    <!-- Second row: A to Z -->
+    <div class="desktop-row" id="letter-row">
+        <div class="icon" onclick="alert('Shortcut A triggered');" id="icona">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="A">
+            <div class="label">A</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut B triggered');" id="iconb">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="B">
+            <div class="label">B</div>
+        </div>
+        <!-- Repeat for all letters up to Z -->
+        <!-- For brevity, I’ll keep using the same placeholder icon -->
+        <div class="icon" onclick="alert('Shortcut C triggered');" id="iconc">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="C">
+            <div class="label">C</div>
+        </div>
+  <div class="icon" onclick="alert('Shortcut D triggered');" id="icond">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="D">
+            <div class="label">D</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut E triggered');" id="icone">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="E">
+            <div class="label">E</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut F triggered');" id="iconf">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="F">
+            <div class="label">F</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut G triggered');" id="icong">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="G">
+            <div class="label">G</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut H triggered');" id="iconh">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="H">
+            <div class="label">H</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut I triggered');" id="iconi">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="I">
+            <div class="label">I</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut J triggered');" id="iconj">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="J">
+            <div class="label">J</div>
+        </div>
+        <div class="icon" onclick="window.open('https://keep.google.com/#home', '_blank')" id="iconk">
+            <img src="https://emtech.suny.edu/wp-content/uploads/Google-Keep-logo.png" alt="K">
+            <div class="label">(K) Keep</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut L triggered');" id="iconl">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="L">
+            <div class="label">L</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut M triggered');" id="iconm">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="M">
+            <div class="label">M</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut N triggered');" id="iconn">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="N">
+            <div class="label">N</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut O triggered');" id="icono">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="O">
+            <div class="label">O</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut P triggered');" id="iconp">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="P">
+            <div class="label">P</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut Q triggered');" id="iconq">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="Q">
+            <div class="label">Q</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut R triggered');" id="iconr">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="R">
+            <div class="label">R</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut S triggered');" id="icons">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="S">
+            <div class="label">S</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut T triggered');" id="icont">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="T">
+            <div class="label">T</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut U triggered');" id="iconu">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="U">
+            <div class="label">U</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut V triggered');" id="iconv">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="V">
+            <div class="label">V</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut W triggered');" id="iconw">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="W">
+            <div class="label">W</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut X triggered');" id="iconx">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="X">
+            <div class="label">X</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut Y triggered');" id="icony">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="Y">
+            <div class="label">Y</div>
+        </div>
+        <div class="icon" onclick="alert('Shortcut Z triggered');" id="iconz">
+            <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="Z">
+            <div class="label">Z</div>
+        </div>
+        <!-- Continue adding icons until Z -->
+    </div>
+</div>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            const key = event.key.toLowerCase();
+            if (document.getElementById('icon' + key)) {
+                document.getElementById('icon' + key).click();
+            }
+        });
+    </script>
+</body>
+</html>
